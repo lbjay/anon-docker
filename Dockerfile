@@ -7,7 +7,6 @@ RUN groupadd -r anonuser -g 433 && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 WORKDIR /opt/anon
-RUN npm install -g coffee-script
 RUN git clone https://github.com/edsu/anon.git
 
 WORKDIR /opt/anon/anon

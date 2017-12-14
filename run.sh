@@ -12,4 +12,4 @@ if [ ! -e /opt/anon/anon/config.json ]; then
 fi
 
 # additional options, e.g., --verbose or --noop, will be passed along
-coffee anon.coffee "$@"
+./anon.js "$@"
